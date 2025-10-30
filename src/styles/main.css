@@ -2,6 +2,7 @@ main {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    background-image: url("../images/wall.png");
 }
 
 .menu {
@@ -13,15 +14,27 @@ main {
     background-color: #000000;
     color: #e9e9e9;
     padding: 0 20px;
+    border-bottom: 5px solid gold;
+}
+
+.menu-time h2:nth-child(2), 
+.menu-score h2:nth-child(2){
+    padding: 0.5rem;
 }
 
 .panel {
     margin-top: 1rem;
-    border: 1px solid red;
     display: flex;
     justify-content: center;
     align-items: center;
 
+}
+
+.menu-lives {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
 }
 
 .square {
@@ -33,5 +46,6 @@ main {
 }
 
 .enemy {
-    background-color: red;
+    background-image: url("../images/ralph.png");
+    background-size: cover;
 }
